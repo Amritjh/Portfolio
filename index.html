@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Amrit Jha — AI & ML Engineer</title>
+<title>Amrit Jha — AI/ML & Data Analytics</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"/>
 <style>
   :root {
@@ -184,6 +184,18 @@
   .stat-num{font-family:'Syne',sans-serif;font-size:2.4rem;font-weight:800;color:#fff;}
   .stat-label{font-size:.78rem;color:var(--muted);font-family:'DM Mono',monospace;letter-spacing:.1em;margin-top:4px;}
 
+
+  /* ─── EXPERIENCE TIMELINE ─── */
+  .timeline{max-width:900px;margin:0 auto;position:relative;padding-left:28px;}
+  .timeline::before{content:'';position:absolute;left:6px;top:8px;bottom:8px;width:1px;background:linear-gradient(var(--accent),var(--accent2),transparent);}
+  .timeline-item{position:relative;margin-bottom:34px;}
+  .timeline-dot{position:absolute;left:-28px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--accent2);box-shadow:0 0 18px rgba(0,212,255,.5);}
+  .timeline-content{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px 28px;}
+  .timeline-date{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.14em;color:var(--accent2);margin-bottom:8px;}
+  .timeline-content h3{font-family:'Syne',sans-serif;font-size:1.2rem;margin-bottom:5px;}
+  .timeline-org{font-size:.82rem;color:var(--muted);margin-bottom:14px;}
+  .timeline-content p{font-size:.88rem;color:rgba(232,232,255,.68);line-height:1.75;}
+
   /* ─── SKILLS ─── */
   .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;}
   .skill-group{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:28px 24px;}
@@ -299,6 +311,9 @@
 
   /* ─── RESPONSIVE ─── */
   @media(max-width:768px){
+    .timeline{padding-left:22px;}
+    .timeline-dot{left:-22px;}
+    .timeline-content{padding:22px 20px;}
     #about .about-grid{grid-template-columns:1fr;}
     .about-stats{grid-template-columns:1fr 1fr;}
     .skills-grid{grid-template-columns:1fr;}
@@ -353,17 +368,19 @@
   <div class="nav-logo">Amrit Jha</div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#certs">Certifications</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
 <section id="hero">
-  <p class="hero-tag">// AI & ML Engineer · CS Student</p>
+  <p class="hero-tag">// AI/ML · Data Analytics · Salesforce Support</p>
   <h1 class="hero-name">Amrit Jha</h1>
-  <p class="hero-subtitle">Building intelligent systems · Dehradun, India</p>
+  <p class="hero-subtitle">B.Tech CSE (AI & ML) · Shivalik College of Engineering · Dehradun</p>
   <div class="hero-cta">
     <a href="#projects" class="btn btn-primary">View Projects</a>
     <a href="#contact" class="btn btn-outline">Get in Touch</a>
@@ -375,9 +392,9 @@
       <div class="float-card-role">B.Tech CSE (AI & ML) · 2023–2027</div>
       <div class="float-card-chips">
         <span class="chip">Python</span>
-        <span class="chip">ML</span>
-        <span class="chip">TensorFlow</span>
+        <span class="chip">Machine Learning</span>
         <span class="chip">SQL</span>
+        <span class="chip">Salesforce</span>
       </div>
     </div>
   </div>
@@ -395,9 +412,9 @@
       <div class="about-text reveal from-left">
         <p class="section-label">// About Me</p>
         <h2 class="section-heading">Crafting the <span>future</span> with AI</h2>
-        <p>I'm a Computer Science student specialising in Artificial Intelligence & Machine Learning at Shivalik College of Engineering, Dehradun. I build systems that learn, adapt, and solve real-world problems.</p>
-        <p>From recruitment platforms to predictive stock models and music recommenders, I love turning data into meaningful experiences.</p>
-        <p>Currently exploring deep learning, data pipelines, and full-stack AI application development.</p>
+        <p>I'm a B.Tech Computer Science student specialising in Artificial Intelligence & Machine Learning at Shivalik College of Engineering, Dehradun, with a strong foundation in programming, data structures, databases, and machine learning.</p>
+        <p>I've worked on AI/ML projects involving resume screening, time-series prediction, and music recommendation, using Python, TensorFlow, Scikit-learn, Pandas, spaCy, SQLite, Plotly, and Streamlit.</p>
+        <p>Currently, I'm gaining enterprise CRM and application-support exposure as a Salesforce Trainee Support Intern at Tech Mahindra while continuing to build my AI/ML and data analytics skills.</p>
       </div>
       <div class="about-stats reveal from-right">
         <div class="stat-box">
@@ -406,15 +423,55 @@
         </div>
         <div class="stat-box">
           <div class="stat-num">86<span style="font-size:1rem">%</span></div>
-          <div class="stat-label">Top Cert Score</div>
+          <div class="stat-label">Python Score</div>
         </div>
         <div class="stat-box">
           <div class="stat-num">2</div>
           <div class="stat-label">Internships</div>
         </div>
         <div class="stat-box">
-          <div class="stat-num">10+</div>
-          <div class="stat-label">Tech Skills</div>
+          <div class="stat-num">4</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE & EDUCATION -->
+<section id="experience">
+  <div class="section-inner">
+    <p class="section-label reveal">// Experience & Education</p>
+    <h2 class="section-heading reveal">Journey so <span>far</span></h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">JUL 2026 — PRESENT</div>
+          <h3>Salesforce Trainee Support Intern</h3>
+          <div class="timeline-org">Tech Mahindra Limited · NSEZ, Noida</div>
+          <p>Participating in Salesforce-focused technical training with practical exposure to enterprise CRM and application-support workflows. Working on technical assignments, project activities, and knowledge-building sessions under mentor guidance.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">FEB 2024 — MAR 2024</div>
+          <h3>Artificial Intelligence Intern</h3>
+          <div class="timeline-org">YHills · Remote</div>
+          <p>Worked on Python and Machine Learning fundamentals through project-based assignments and practical implementation, gaining hands-on exposure to AI concepts, model workflows, and basic Machine Learning development.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">JUL 2023 — JUL 2027</div>
+          <h3>B.Tech in Computer Science — AI & ML</h3>
+          <div class="timeline-org">Shivalik College of Engineering · Dehradun, India</div>
+          <p>Relevant coursework: Data Structures & Algorithms, Computer Networks, Operating Systems, and Object-Oriented Programming.</p>
         </div>
       </div>
     </div>
@@ -424,29 +481,42 @@
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-inner">
-    <p class="section-label reveal">// Technical Arsenal</p>
-    <h2 class="section-heading reveal">Skills &amp; <span>Expertise</span></h2>
+    <p class="section-label reveal">// Technical Skills</p>
+    <h2 class="section-heading reveal">Skills &amp; <span>Toolkit</span></h2>
     <div class="skills-grid">
       <div class="skill-group reveal">
         <div class="skill-group-title">Languages</div>
-        <div class="skill-item"><div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">92%</span></div><div class="skill-track"><div class="skill-fill" data-pct="92"></div></div></div>
-        <div class="skill-item"><div class="skill-top"><span class="skill-name">C / C++</span><span class="skill-pct">75%</span></div><div class="skill-track"><div class="skill-fill" data-pct="75"></div></div></div>
-        <div class="skill-item"><div class="skill-top"><span class="skill-name">SQL</span><span class="skill-pct">80%</span></div><div class="skill-track"><div class="skill-fill" data-pct="80"></div></div></div>
-        <div class="skill-item"><div class="skill-top"><span class="skill-name">HTML / CSS</span><span class="skill-pct">70%</span></div><div class="skill-track"><div class="skill-fill" data-pct="70"></div></div></div>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">C</span><span class="tag">C++</span>
+          <span class="tag">SQL</span><span class="tag">HTML</span><span class="tag">CSS</span>
+        </div>
       </div>
-      <div class="skill-group reveal" style="transition-delay:.15s">
-        <div class="skill-group-title">Libraries & Frameworks</div>
-        <div class="skill-item"><div class="skill-top"><span class="skill-name">Scikit-learn</span><span class="skill-pct">85%</span></div><div class="skill-track"><div class="skill-fill" data-pct="85"></div></div></div>
-        <div class="skill-item"><div class="skill-top"><span class="skill-name">TensorFlow</span><span class="skill-pct">72%</span></div><div class="skill-track"><div class="skill-fill" data-pct="72"></div></div></div>
-        <div class="skill-item"><div class="skill-top"><span class="skill-name">Pandas / NumPy</span><span class="skill-pct">88%</span></div><div class="skill-track"><div class="skill-fill" data-pct="88"></div></div></div>
-        <div class="skill-item"><div class="skill-top"><span class="skill-name">Streamlit</span><span class="skill-pct">78%</span></div><div class="skill-track"><div class="skill-fill" data-pct="78"></div></div></div>
+      <div class="skill-group reveal" style="transition-delay:.1s">
+        <div class="skill-group-title">AI / ML</div>
+        <div class="project-tags">
+          <span class="tag">Machine Learning</span><span class="tag">Deep Learning</span>
+          <span class="tag">NLP</span><span class="tag">Supervised Learning</span>
+          <span class="tag">Unsupervised Learning</span><span class="tag">Feature Engineering</span>
+          <span class="tag">Model Evaluation</span>
+        </div>
+      </div>
+      <div class="skill-group reveal" style="transition-delay:.2s">
+        <div class="skill-group-title">Libraries &amp; Data</div>
+        <div class="project-tags">
+          <span class="tag">NumPy</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span>
+          <span class="tag">Matplotlib</span><span class="tag">TensorFlow</span><span class="tag">NLTK</span>
+          <span class="tag">spaCy</span><span class="tag">Plotly</span><span class="tag">Streamlit</span>
+          <span class="tag">EDA</span><span class="tag">Data Visualization</span>
+        </div>
       </div>
       <div class="skill-group reveal" style="transition-delay:.3s">
-        <div class="skill-group-title">Concepts & Tools</div>
-        <div class="skill-item"><div class="skill-top"><span class="skill-name">Machine Learning</span><span class="skill-pct">84%</span></div><div class="skill-track"><div class="skill-fill" data-pct="84"></div></div></div>
-        <div class="skill-item"><div class="skill-top"><span class="skill-name">Data Analysis</span><span class="skill-pct">82%</span></div><div class="skill-track"><div class="skill-fill" data-pct="82"></div></div></div>
-        <div class="skill-item"><div class="skill-top"><span class="skill-name">Git / GitHub</span><span class="skill-pct">80%</span></div><div class="skill-track"><div class="skill-fill" data-pct="80"></div></div></div>
-        <div class="skill-item"><div class="skill-top"><span class="skill-name">DBMS / OOPs</span><span class="skill-pct">76%</span></div><div class="skill-track"><div class="skill-fill" data-pct="76"></div></div></div>
+        <div class="skill-group-title">Salesforce &amp; Tools</div>
+        <div class="project-tags">
+          <span class="tag">Salesforce Fundamentals</span><span class="tag">CRM Support</span>
+          <span class="tag">Case Management</span><span class="tag">QA / Testing</span>
+          <span class="tag">Excel</span><span class="tag">Git</span><span class="tag">GitHub</span>
+          <span class="tag">VS Code</span><span class="tag">Jupyter</span><span class="tag">Google Colab</span>
+        </div>
       </div>
     </div>
   </div>
@@ -461,25 +531,25 @@
       <div class="project-card reveal">
         <div class="project-num">01 / 03</div>
         <div class="project-title">AI-Powered Recruitment Platform</div>
-        <div class="project-desc">A full recruitment system featuring automated resume screening, candidate ranking, and a shortlist/reject workflow. Includes a recruiter dashboard and candidate-side interface for end-to-end hiring management.</div>
+        <div class="project-desc">Built an end-to-end resume screening system using spaCy NER for entity extraction and fuzzy skill matching to rank candidates against job requirements. SQLite provides persistent storage, while a dark-themed Streamlit dashboard with Plotly supports job creation, bulk resume uploads, candidate scoring, and shortlist/reject decisions.</div>
         <div class="project-tags">
-          <span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">UI/UX</span>
+          <span class="tag">Python</span><span class="tag">spaCy</span><span class="tag">SQLite</span><span class="tag">Plotly</span><span class="tag">Streamlit</span>
         </div>
       </div>
       <div class="project-card reveal" style="transition-delay:.12s">
         <div class="project-num">02 / 03</div>
-        <div class="project-title">Stock Price Prediction Model</div>
-        <div class="project-desc">ML model trained on historical stock data to predict market trends. Includes preprocessing pipelines, feature engineering, and model evaluation using RMSE metrics with clear visualisations.</div>
+        <div class="project-title">StockSense AI</div>
+        <div class="project-desc">Trained an LSTM model on historical and live stock data through the yfinance API for price-trend prediction. Engineered time-series features, used EarlyStopping over 50 epochs to reduce overfitting, and built buy/sell signal logic with Matplotlib visualizations to compare predictions against actual price movement.</div>
         <div class="project-tags">
-          <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Matplotlib</span>
+          <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Scikit-learn</span><span class="tag">yfinance</span><span class="tag">LSTM</span>
         </div>
       </div>
       <div class="project-card reveal" style="transition-delay:.24s">
         <div class="project-num">03 / 03</div>
-        <div class="project-title">Music Recommendation System</div>
-        <div class="project-desc">Collaborative and content-based recommendation engine using clustering and similarity measures. Suggests tracks based on user listening history and audio feature attributes.</div>
+        <div class="project-title">MusicMind AI</div>
+        <div class="project-desc">Built a music recommendation engine using a 114k-song Kaggle dataset. Applied KMeans clustering and cosine similarity on audio feature vectors to group and match tracks, redesigning the preprocessing pipeline around offline track attributes after Spotify API Premium-tier access limits.</div>
         <div class="project-tags">
-          <span class="tag">Python</span><span class="tag">Clustering</span><span class="tag">Similarity Metrics</span>
+          <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span><span class="tag">KMeans</span><span class="tag">Cosine Similarity</span>
         </div>
       </div>
     </div>
@@ -492,6 +562,13 @@
     <p class="section-label reveal">// Credentials</p>
     <h2 class="section-heading reveal"><span>Certifications</span></h2>
     <div class="cert-list">
+      <div class="cert-item reveal">
+        <div class="cert-icon">📊</div>
+        <div>
+          <div class="cert-name">Data Analytics Job Simulation</div>
+          <div class="cert-org">Deloitte via Forage · Data Analysis &amp; Forensic Technology · Jun 2025</div>
+        </div>
+      </div>
       <div class="cert-item reveal">
         <div class="cert-icon">🎓</div>
         <div>
@@ -551,7 +628,7 @@
 </section>
 
 <footer>
-  <p>© 2025 Amrit Jha · Dehradun, India · Built with ❤️ and vanilla code</p>
+  <p>© 2026 Amrit Jha · Dehradun, India · Built with ❤️ and vanilla code</p>
 </footer>
 
 <script>
@@ -620,8 +697,7 @@ function animRing(){
 
 // ─── MARQUEE ───
 (function(){
-  const items=['YHills · AI Internship','Python · ML · TensorFlow','Scikit-learn · Pandas · NumPy',
-    'SWAYAM Certified','Shivalik College of Engineering','GitHub · Open Source','Recruitment AI · Stock ML','Music Recommender'];
+  const items=['Tech Mahindra · Salesforce Support','YHills · AI Internship','Python · Machine Learning','TensorFlow · Scikit-learn','Data Analytics · Excel · SQL','Streamlit · Plotly · spaCy','Recruitment AI · StockSense AI','MusicMind AI'];
   const track=document.getElementById('marqueeTrack');
   const doubled=[...items,...items];
   doubled.forEach(t=>{
